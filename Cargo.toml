@@ -1,0 +1,20 @@
+[package]
+name = "project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "1.0.0"
+dotenv = "0.9.0"
+futures = "0.1"
+juniper = "0.13.1"
+serde_json = "1.0"
+async-std = "1.10.0"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "0.2", features = ["full"] }
+[dependencies.mongodb]
+version = "2.1.0"
+default-features = false
+features = ["sync"]
